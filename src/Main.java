@@ -20,9 +20,8 @@ public class Main {
                 }
                 array = Arrays.copyOfRange(Array, Math.min(a, b), Math.max(a,b));
 
-                for(int i:fb.sequenceCreation(array, fb.lowestValueCalculation(array))){
-                    sb.append(i + ",");
-                }
+                int[] i = fb.sequenceCreation(array, fb.lowestValueCalculation(array));
+                sb.append(i[0] + "," + i[i.length-1]);
                 System.out.println(sb);
 
                 a = b = 0;
